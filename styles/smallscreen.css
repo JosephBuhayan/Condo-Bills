@@ -1,0 +1,13 @@
+.bills-main{
+    display: list-item;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.individual-bills{
+    margin: auto;
+    margin-bottom: 20px;
+}

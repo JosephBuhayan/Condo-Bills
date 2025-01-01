@@ -1,0 +1,109 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+header {
+  padding-top: 20px;
+}
+
+main {
+  height: 1000px;
+}
+
+.bills-main {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  padding-top: 20px;
+  width: 60%;
+  padding-bottom: 100px;
+}
+
+.individual-bills {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 20%;
+  height: 400px;
+  min-width: 200px;
+  position: relative;
+}
+
+.logo {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2px solid black;
+}
+
+.logo img {
+  width: 80%;
+  padding-top: 0px;
+}
+
+.left-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #0a0a23;
+  color: #fff;
+  font-size: medium;
+  border: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 44%;
+  margin: 4% 4%;
+}
+
+.right-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #0a0a23;
+  color: #fff;
+  font-size: medium;
+  border: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 44%;
+  margin: 4% 4%;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}

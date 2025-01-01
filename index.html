@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bills</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/smallscreen.css">
+    <style>
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+      }
+
+      .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Your Bills</h1>
+        </header>
+        <nav class="bills-main">
+            <div class="individual-bills" id="A1 101">
+                <div class="logo">
+                    <img src="images/DSWD-Logo.jpg" alt="DSWD-Logo">
+                </div>
+                <h3>Water</h3>
+                <h2>Php 1000</h2>
+                <button type="button" class="left-button" id="see-breakdown-water"> See Breakdown</button>
+                <button type="button" class="right-button" id="pay-btn-water"> Pay Bill</button>
+            </div>
+            <div class="individual-bills" >
+                <div class="logo">
+                    <img src="images/Davao-Light-Logo.png" alt="Davao-Light-Logo">
+                </div>
+                <h3>Hallway Lights</h3>
+                <h2>Php 2000</h2>
+                <button type="button" class="left-button" id="see-breakdown-hallway"> See Breakdown</button>
+                <button type="button" class="right-button" id="pay-btn-hallway"> Pay Bill</button>
+            </div>
+            <div class="individual-bills">
+                <div class="logo">
+                    <img src="images/Big-Brother-Logo.jpg" alt="Big-Brother-Logo">
+                </div>
+                <h3>Home Owner's Association</h3>
+                <h2>Php 1050</h2>
+                <button type="button" class="left-button" id="see-breakdown-home-owner"> See Breakdown</button>
+                <button type="button" class="right-button" id="pay-btn-home-owner" > Pay Bill</button>
+            </div>
+        </nav>
+
+        <!-- Overlay div (initially hidden) -->
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <span class="close-button" id="close-overlay">X</span>
+                <table id="breakdown-table">
+                    <!-- Placeholder table content (update later) -->
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Placeholder</td>
+                            <td>Php 0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
